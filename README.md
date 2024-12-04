@@ -15,4 +15,6 @@ Note: if you are having internet issues, check to see if:
   2. wlan0 is present amoung the interfaces listed using `ifconfig`
   3. wlan0 has a higher metric than usb0 or eth0 using `ip route`
   * if not, execute: `sudo nmcli con mod 'preconfigured' ipv4.route-metric 0` and reboot
-    
+
+
+Note: To manually extract the deploy package use: `cat deploy.tar.gz.* | tar xzvf - `

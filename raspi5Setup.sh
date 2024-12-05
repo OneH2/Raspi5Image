@@ -58,11 +58,11 @@ if [ "$EUID" -eq 0 ] ;then
 		echo "Ethernet connection already configured"
 	fi
 	sudo -H -u pi bash -c 'pip3 install minimalmodbus pyModbusTCP --break-system-packages'
-	wait
- 	cd /home/pi/Raspi5Image
- 	cat deploy.tar.gz.* | tar xzvf -
-  	wait
-	mv /home/pi/Raspi5Image/csharp /home/pi/csharp
+	# wait
+ 	# cd /home/pi/Raspi5Image
+ 	# cat deploy.tar.gz.* | tar xzvf -
+  # 	wait
+	# mv /home/pi/Raspi5Image/csharp /home/pi/csharp
 	echo "########################################################"
 	echo "#######                                         ########"
 	echo "#######            Setup Finished               ########"
